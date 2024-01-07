@@ -1458,8 +1458,8 @@ What We Provied Area Style
   position: relative;
   font-size: 18px;
   background-color: #ffffff;
-  padding: 30px 20px;
-  padding-left: 113px;
+  padding: 10px;
+  padding-left: 20px;
   -webkit-transition: all ease 0.5s;
   transition: all ease 0.5s;
   position: relative;
@@ -1498,7 +1498,7 @@ What We Provied Area Style
 
 .what-we-provide-content ul li:hover::before {
   background-color: #00ca99;
-  width: 112px;
+  width: 5px;
 }
 
 .what-we-provide-content ul li:hover span {
@@ -5120,4 +5120,15 @@ Animation Area Style*/
     height: 390px;
   }
 
+}
+
+.font-sm {
+  font-size: 0.7rem;
+}
+
+.services-new p {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
