@@ -504,7 +504,14 @@ Dark Mode Area Style
   .switch-box {
     position: fixed;
     z-index: 1;
-    right: 20px;
+    right: 30px;
     bottom: 20px;
+  }
+
+}
+
+@media (min-width: 1400px) {
+  .switch-box {
+    right: 35px;
   }
 }
