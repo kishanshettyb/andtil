@@ -5153,3 +5153,12 @@ Animation Area Style*/
   margin-right: 15px;
   border-radius: 30px;
 }
+
+.default-btn {
+  padding: 7px 40px;
+  border-radius: 30px;
+}
+
+.desktop-nav .navbar .others-options ul li .call-us i {
+  line-height: 40px;
+}
