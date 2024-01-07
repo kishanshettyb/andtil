@@ -393,9 +393,9 @@ Navbar Area Style
   display: none;
 }
 
-.navbar-area.style-border {
+/* .navbar-area.style-border {
   border: 1px solid #ffffff;
-}
+} */
 
 .desktop-nav {
   padding-top: 0;
@@ -5131,4 +5131,8 @@ Animation Area Style*/
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+
+.subscribe-area {
+  display: none !important;
 }
