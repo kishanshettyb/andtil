@@ -5110,3 +5110,14 @@ Animation Area Style*/
 .banner-area {
   padding-top: 180px !important;
 }
+
+.what-we-do .single-what-we-do {
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .what-we-do .single-what-we-do {
+    height: 390px;
+  }
+
+}
