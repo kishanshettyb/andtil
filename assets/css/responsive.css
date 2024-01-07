@@ -205,7 +205,7 @@
   }
 
   .single-services-box {
-    padding: 20px;
+    padding: 10px 20px;
   }
 
   .single-services-box .icon {
@@ -1859,7 +1859,8 @@
   }
 
   .single-services-box h3 {
-    font-size: 22px;
+    font-size: 16px;
+    margin-bottom: 10px !important;
   }
 
   .single-footer-widget .contact-info li {
