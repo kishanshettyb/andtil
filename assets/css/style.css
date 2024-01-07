@@ -5136,3 +5136,19 @@ Animation Area Style*/
 .subscribe-area {
   display: none !important;
 }
+
+.enquiry-btn {
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 1px solid #2279fc;
+  color: #1b2336;
+}
+
+.desktop-nav .navbar .others-options ul {
+  display: flex;
+  align-items: center;
+}
+
+.mr-15 {
+  margin-right: 15px;
+}
