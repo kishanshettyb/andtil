@@ -4,8 +4,8 @@ Dark Mode Area Style
 .switch-box {
   position: fixed;
   z-index: 1;
-  right: 95px;
-  bottom: 45px;
+  right: 8px;
+  bottom: 8px;
 }
 
 .switch-box .switch {
@@ -46,24 +46,24 @@ Dark Mode Area Style
   -webkit-transition: 0.4s;
   transition: 0.4s;
   -webkit-box-shadow: 0 0px 15px #2020203d;
-          box-shadow: 0 0px 15px #2020203d;
+  box-shadow: 0 0px 15px #2020203d;
   background: white url("https://i.ibb.co/FxzBYR9/night.png");
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.switch-box input:checked + .slider {
+.switch-box input:checked+.slider {
   background-color: #00ca99;
 }
 
-.switch-box input:focus + .slider {
+.switch-box input:focus+.slider {
   -webkit-box-shadow: 0 0 1px #00ca99;
-          box-shadow: 0 0 1px #00ca99;
+  box-shadow: 0 0 1px #00ca99;
 }
 
-.switch-box input:checked + .slider:before {
+.switch-box input:checked+.slider:before {
   -webkit-transform: translateX(24px);
-          transform: translateX(24px);
+  transform: translateX(24px);
   background: #ffffff url("https://i.ibb.co/7JfqXxB/sunny.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -89,7 +89,18 @@ Dark Mode Area Style
   color: #eeeeee;
 }
 
-.theme-dark .h1, .theme-dark .h2, .theme-dark .h3, .theme-dark .h4, .theme-dark .h5, .theme-dark .h6, .theme-dark h1, .theme-dark h2, .theme-dark h3, .theme-dark h4, .theme-dark h5, .theme-dark h6 {
+.theme-dark .h1,
+.theme-dark .h2,
+.theme-dark .h3,
+.theme-dark .h4,
+.theme-dark .h5,
+.theme-dark .h6,
+.theme-dark h1,
+.theme-dark h2,
+.theme-dark h3,
+.theme-dark h4,
+.theme-dark h5,
+.theme-dark h6 {
   color: #ffffff;
 }
 
@@ -145,7 +156,9 @@ Dark Mode Area Style
   color: #2279fc;
 }
 
-.theme-dark .desktop-nav .navbar .navbar-nav .nav-item a:hover, .theme-dark .desktop-nav .navbar .navbar-nav .nav-item a:focus, .theme-dark .desktop-nav .navbar .navbar-nav .nav-item a.active {
+.theme-dark .desktop-nav .navbar .navbar-nav .nav-item a:hover,
+.theme-dark .desktop-nav .navbar .navbar-nav .nav-item a:focus,
+.theme-dark .desktop-nav .navbar .navbar-nav .nav-item a.active {
   color: #00ca99 !important;
 }
 
@@ -463,10 +476,12 @@ Dark Mode Area Style
   background-color: #141a28;
 }
 
-.theme-dark .nav-tabs .nav-item.show .nav-link, .theme-dark .nav-tabs .nav-link.active {
+.theme-dark .nav-tabs .nav-item.show .nav-link,
+.theme-dark .nav-tabs .nav-link.active {
   background-color: transparent;
   color: #ffffff;
 }
+
 
 .theme-dark .product-details-tab .nav-tabs .nav-item .nav-link {
   color: #ffffff;
@@ -483,4 +498,13 @@ Dark Mode Area Style
 .theme-dark .product-details-tab .product-details-additional-content ul li span {
   color: #ffffff;
 }
+
 /*# sourceMappingURL=dark-mode.css.map */
+@media (min-width: 768px) {
+  .switch-box {
+    position: fixed;
+    z-index: 1;
+    right: 20px;
+    bottom: 20px;
+  }
+}

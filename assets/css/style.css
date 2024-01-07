@@ -5097,5 +5097,16 @@ Animation Area Style*/
 
 /*# sourceMappingURL=style.css.map */
 .main-logo {
-  height: 80px !important;
+  height: 50px;
+}
+
+@media (min-width: 768px) {
+  .main-logo {
+    height: 80px !important;
+  }
+}
+
+
+.banner-area {
+  padding-top: 180px !important;
 }
