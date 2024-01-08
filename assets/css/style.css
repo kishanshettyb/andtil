@@ -5170,3 +5170,7 @@ Animation Area Style*/
 .doctors-row span {
   font-size: 12px;
 }
+
+.font-md {
+  font-size: 0.9rem;
+}
