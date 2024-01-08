@@ -5115,9 +5115,13 @@ Animation Area Style*/
   height: auto;
 }
 
+.physio .single-what-we-do {
+  height: auto;
+}
+
 @media (min-width: 768px) {
-  .what-we-do .single-what-we-do {
-    height: 390px;
+  .physio .single-what-we-do {
+    height: 480px;
   }
 
 }
