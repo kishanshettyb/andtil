@@ -5183,3 +5183,8 @@ Animation Area Style*/
 .font-md {
   font-size: 0.9rem;
 }
+
+#input_2 {
+  height: 45px;
+  width: 100%;
+}

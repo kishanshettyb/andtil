@@ -1117,14 +1117,16 @@
 						<div class="appointment-content wow fadeInRight delay-0-2s">
 							<span class="top-title">Make An Appointment</span>
 							<h2>Contact us for any medical help and fill out an appointment form</h2>
-							<script src="https://cdn03.jotfor.ms/static/prototype.forms.js?v=3.3.50106" type="text/javascript"></script>
-							<script src="https://cdn01.jotfor.ms/static/jotform.forms.js?v=3.3.50106" type="text/javascript"></script>
-							<script src="https://cdn02.jotfor.ms/js/punycode-1.4.1.min.js?v=3.3.50106" type="text/javascript" defer></script>
-							<script src="https://cdn03.jotfor.ms/js/vendor/maskedinput_5.0.9.min.js?v=3.3.50106" type="text/javascript"></script>
-							<script src="https://cdn01.jotfor.ms/js/payments/validategateways.js?v=3.3.50106" type="text/javascript"></script>
-							<script src="https://cdn01.jotfor.ms/s/umd/01396201cf4/for-form-branding-footer.js?v=3.3.50106" type="text/javascript" defer></script>
-							<script src="https://cdn02.jotfor.ms/js/vendor/smoothscroll.min.js?v=3.3.50106" type="text/javascript"></script>
-							<script src="https://cdn03.jotfor.ms/js/errorNavigation.js?v=3.3.50106" type="text/javascript"></script>
+
+							<!-- <script type="text/javascript" src="https://form.jotform.com/jsform/240100901705036"></script> -->
+							<script src="https://cdn03.jotfor.ms/static/prototype.forms.js?v=3.3.50107" type="text/javascript"></script>
+							<script src="https://cdn01.jotfor.ms/static/jotform.forms.js?v=3.3.50107" type="text/javascript"></script>
+							<script src="https://cdn02.jotfor.ms/js/punycode-1.4.1.min.js?v=3.3.50107" type="text/javascript" defer></script>
+							<script src="https://cdn03.jotfor.ms/js/vendor/maskedinput_5.0.9.min.js?v=3.3.50107" type="text/javascript"></script>
+							<script src="https://cdn01.jotfor.ms/js/payments/validategateways.js?v=3.3.50107" type="text/javascript"></script>
+							<script src="https://cdn01.jotfor.ms/s/umd/06f35382a0a/for-form-branding-footer.js?v=3.3.50107" type="text/javascript" defer></script>
+							<script src="https://cdn02.jotfor.ms/js/vendor/smoothscroll.min.js?v=3.3.50107" type="text/javascript"></script>
+							<script src="https://cdn03.jotfor.ms/js/errorNavigation.js?v=3.3.50107" type="text/javascript"></script>
 							<script type="text/javascript">
 								JotForm.newDefaultTheme = true;
 								JotForm.extendsNewTheme = false;
@@ -1279,6 +1281,7 @@
 											countSelectedDaysOnly: false
 										});
 									});
+									JotForm.formatDate({ date: new Date(), dateField: $("id_" + 7) });
 									JotForm.alterTexts({
 										ageVerificationError: "You must be older than {minAge} years old to submit this form.",
 										alphabetic: "This field can only contain letters",
@@ -1385,15 +1388,15 @@
 								setTimeout(function () {
 									JotForm.paymentExtrasOnTheFly([
 										null,
-										{ name: "heading", qid: "1", text: "Form", type: "control_head" },
-										{ name: "submit2", qid: "2", text: "Submit", type: "control_button" },
+										null,
+										{ name: "submit2", qid: "2", text: "                    Submit                    ", type: "control_button" },
 										null,
 										null,
 										{ description: "", name: "typeA5", qid: "5", subLabel: "", text: "Full Name", type: "control_textbox" },
-										{ description: "", name: "email", qid: "6", subLabel: "example@example.com", text: "Email", type: "control_email" },
+										{ description: "", name: "email", qid: "6", subLabel: "", text: "Email", type: "control_email" },
 										{ description: "", name: "date", qid: "7", text: "Date", type: "control_datetime" },
 										{ description: "", name: "phoneNumber", qid: "8", text: "Phone Number", type: "control_phone" },
-										{ description: "", name: "typeA9", qid: "9", text: "", type: "control_radio" }
+										{ description: "", name: "typeA9", qid: "9", text: "Gender", type: "control_radio" }
 									]);
 								}, 20);
 							</script>
@@ -1423,10 +1426,10 @@
 									}
 								}
 							</style>
-							<link type="text/css" rel="stylesheet" href="https://cdn02.jotfor.ms/themes/CSS/5e6b428acc8c4e222d1beb91.css?v=3.3.50106" />
-							<link type="text/css" rel="stylesheet" href="https://cdn03.jotfor.ms/css/styles/payment/payment_styles.css?3.3.50106" />
-							<link type="text/css" rel="stylesheet" href="https://cdn01.jotfor.ms/css/styles/payment/payment_feature.css?3.3.50106" />
-							<link type="text/css" rel="stylesheet" href="https://cdn02.jotfor.ms/stylebuilder/static/donationBox.css?v=3.3.50106" />
+							<link type="text/css" rel="stylesheet" href="https://cdn02.jotfor.ms/themes/CSS/5e6b428acc8c4e222d1beb91.css?v=3.3.50107" />
+							<link type="text/css" rel="stylesheet" href="https://cdn03.jotfor.ms/css/styles/payment/payment_styles.css?3.3.50107" />
+							<link type="text/css" rel="stylesheet" href="https://cdn01.jotfor.ms/css/styles/payment/payment_feature.css?3.3.50107" />
+							<link type="text/css" rel="stylesheet" href="https://cdn02.jotfor.ms/stylebuilder/static/donationBox.css?v=3.3.50107" />
 							<form
 								class="jotform-form"
 								onsubmit="return typeof testSubmitFunction !== 'undefined' && testSubmitFunction();"
@@ -1441,36 +1444,27 @@
 									type="hidden"
 									id="cardinalOrderNumber"
 									value=""
-								/><input type="hidden" id="jsExecutionTracker" name="jsExecutionTracker" value="build-date-1704953410277" /><input
+								/><input type="hidden" id="jsExecutionTracker" name="jsExecutionTracker" value="build-date-1704957230486" /><input
 									type="hidden"
 									id="submitSource"
 									name="submitSource"
 									value="unknown"
-								/><input type="hidden" id="buildDate" name="buildDate" value="1704953410277" />
+								/><input type="hidden" id="buildDate" name="buildDate" value="1704957230486" />
 								<div id="formCoverLogo" style="margin-bottom: 32px" class="form-cover-wrapper form-has-cover form-page-cover-image-align-center">
 									<div class="form-page-cover-image-wrapper" style="max-width: 752px">
 										<img
 											src="https://www.jotform.com/uploads/kishankishb/form_files/white-logo.659f7bea5ce456.50307779.png"
 											class="form-page-cover-image"
-											width="350"
+											width="170"
 											aria-label="Form Logo"
-											style="aspect-ratio: 350/109"
+											style="aspect-ratio: 170/53"
 										/>
 									</div>
 								</div>
 								<div role="main" class="form-all">
 									<ul class="form-section page-section">
-										<li id="cid_1" class="form-input-wide" data-type="control_head">
-											<div class="form-header-group header-large">
-												<div class="header-text httal htvam">
-													<h1 id="header_1" class="form-header" data-component="header">Form</h1>
-												</div>
-											</div>
-										</li>
-										<li class="form-line jf-required" data-type="control_textbox" id="id_5">
-											<label class="form-label form-label-top form-label-auto" id="label_5" for="input_5" aria-hidden="false">
-												Full Name<span class="form-required">*</span>
-											</label>
+										<li class="form-line form-line-column form-col-1 jf-required" data-type="control_textbox" id="id_5">
+											<label class="form-label form-label-top" id="label_5" for="input_5" aria-hidden="false"> Full Name<span class="form-required">*</span> </label>
 											<div id="cid_5" class="form-input-wide jf-required" data-layout="half">
 												<input
 													type="text"
@@ -1479,8 +1473,8 @@
 													data-type="input-textbox"
 													class="form-textbox validate[required]"
 													data-defaultvalue=""
-													style="width: 310px"
-													size="310"
+													style="width: 100px"
+													size="100"
 													data-component="textbox"
 													aria-labelledby="label_5"
 													required=""
@@ -1488,29 +1482,25 @@
 												/>
 											</div>
 										</li>
-										<li class="form-line" data-type="control_email" id="id_6">
-											<label class="form-label form-label-top form-label-auto" id="label_6" for="input_6" aria-hidden="false"> Email </label>
+										<li class="form-line form-line-column form-col-2" data-type="control_email" id="id_6">
+											<label class="form-label form-label-top" id="label_6" for="input_6" aria-hidden="false"> Email </label>
 											<div id="cid_6" class="form-input-wide" data-layout="half">
-												<span class="form-sub-label-container" style="vertical-align: top"
-													><input
-														type="email"
-														id="input_6"
-														name="q6_email"
-														class="form-textbox validate[Email]"
-														data-defaultvalue=""
-														style="width: 310px"
-														size="310"
-														data-component="email"
-														aria-labelledby="label_6 sublabel_input_6"
-														value=""
-													/><label class="form-sub-label" for="input_6" id="sublabel_input_6" style="min-height: 13px">example@example.com</label></span
-												>
+												<input
+													type="email"
+													id="input_6"
+													name="q6_email"
+													class="form-textbox validate[Email]"
+													data-defaultvalue=""
+													style="width: 310px"
+													size="310"
+													data-component="email"
+													aria-labelledby="label_6"
+													value=""
+												/>
 											</div>
 										</li>
-										<li class="form-line jf-required" data-type="control_phone" id="id_8">
-											<label class="form-label form-label-top form-label-auto" id="label_8" for="input_8_area" aria-hidden="false">
-												Phone Number<span class="form-required">*</span>
-											</label>
+										<li class="form-line form-line-column form-col-3 jf-required" data-type="control_phone" id="id_8">
+											<label class="form-label form-label-top" id="label_8" for="input_8_area" aria-hidden="false"> Phone Number<span class="form-required">*</span> </label>
 											<div id="cid_8" class="form-input-wide jf-required" data-layout="half">
 												<div data-wrapper-react="true">
 													<span class="form-sub-label-container" style="vertical-align: top" data-input-type="areaCode"
@@ -1521,11 +1511,10 @@
 															class="form-textbox validate[required]"
 															data-defaultvalue=""
 															data-component="areaCode"
-															aria-labelledby="label_8 sublabel_8_area"
+															aria-labelledby="label_8"
 															required=""
 															value=""
-														/><span class="phone-separate" aria-hidden="true"> -</span
-														><label class="form-sub-label" for="input_8_area" id="sublabel_8_area" style="min-height: 13px">Area Code</label></span
+														/><span class="phone-separate" aria-hidden="true"> -</span></span
 													><span class="form-sub-label-container" style="vertical-align: top" data-input-type="phone"
 														><input
 															type="tel"
@@ -1534,57 +1523,35 @@
 															class="form-textbox validate[required]"
 															data-defaultvalue=""
 															data-component="phone"
-															aria-labelledby="label_8 sublabel_8_phone"
+															aria-labelledby="label_8"
 															required=""
 															value=""
-														/><label class="form-sub-label" for="input_8_phone" id="sublabel_8_phone" style="min-height: 13px">Phone Number</label></span
-													>
+													/></span>
 												</div>
 											</div>
 										</li>
-										<li class="form-line jf-required" data-type="control_radio" id="id_9">
-											<label class="form-label form-label-top form-label-auto" id="label_9" aria-hidden="false"> <span class="form-required">*</span> </label>
-											<div id="cid_9" class="form-input-wide jf-required" data-layout="full">
-												<div class="form-single-column" role="group" aria-labelledby="label_9" data-component="radio">
-													<span class="form-radio-item" style="clear: left"
-														><span class="dragger-item"></span
-														><input type="radio" aria-describedby="label_9" class="form-radio validate[required]" id="input_9_0" name="q9_typeA9" value="Male" required="" /><label
-															id="label_input_9_0"
-															for="input_9_0"
-															>Male</label
-														></span
-													><span class="form-radio-item" style="clear: left"
-														><span class="dragger-item"></span
-														><input
-															type="radio"
-															aria-describedby="label_9"
-															class="form-radio validate[required]"
-															id="input_9_1"
-															name="q9_typeA9"
-															value="Female"
-															required=""
-														/><label id="label_input_9_1" for="input_9_1">Female</label></span
-													><span class="form-radio-item" style="clear: left"
-														><span class="dragger-item"></span
-														><input
-															type="radio"
-															aria-describedby="label_9"
-															class="form-radio validate[required]"
-															id="input_9_2"
-															name="q9_typeA9"
-															value="Do not wish to disclose"
-															required=""
-														/><label id="label_input_9_2" for="input_9_2">Do not wish to disclose</label></span
-													>
-												</div>
-											</div>
-										</li>
-										<li class="form-line jf-required" data-type="control_datetime" id="id_7">
-											<label class="form-label form-label-top form-label-auto" id="label_7" for="lite_mode_7" aria-hidden="false"> Date<span class="form-required">*</span> </label>
+										<li class="form-line form-line-column form-col-4 jf-required" data-type="control_datetime" id="id_7">
+											<label class="form-label form-label-top" id="label_7" for="lite_mode_7" aria-hidden="false"> Date<span class="form-required">*</span> </label>
 											<div id="cid_7" class="form-input-wide jf-required" data-layout="half">
 												<div data-wrapper-react="true">
 													<div style="display: none">
 														<span class="form-sub-label-container" style="vertical-align: top"
+															><input
+																type="tel"
+																class="currentDate form-textbox validate[required, limitDate]"
+																id="day_7"
+																name="q7_date[day]"
+																size="2"
+																data-maxlength="2"
+																data-age=""
+																maxlength="2"
+																value="11"
+																required=""
+																autocomplete="off"
+																aria-labelledby="label_7 sublabel_7_day"
+															/><span class="date-separate" aria-hidden="true"> -</span
+															><label class="form-sub-label" for="day_7" id="sublabel_7_day" style="min-height: 13px">Day</label></span
+														><span class="form-sub-label-container" style="vertical-align: top"
 															><input
 																type="tel"
 																class="form-textbox validate[required, limitDate]"
@@ -1594,28 +1561,12 @@
 																data-maxlength="2"
 																data-age=""
 																maxlength="2"
-																value=""
+																value="01"
 																required=""
 																autocomplete="off"
 																aria-labelledby="label_7 sublabel_7_month"
 															/><span class="date-separate" aria-hidden="true"> -</span
 															><label class="form-sub-label" for="month_7" id="sublabel_7_month" style="min-height: 13px">Month</label></span
-														><span class="form-sub-label-container" style="vertical-align: top"
-															><input
-																type="tel"
-																class="form-textbox validate[required, limitDate]"
-																id="day_7"
-																name="q7_date[day]"
-																size="2"
-																data-maxlength="2"
-																data-age=""
-																maxlength="2"
-																value=""
-																required=""
-																autocomplete="off"
-																aria-labelledby="label_7 sublabel_7_day"
-															/><span class="date-separate" aria-hidden="true"> -</span
-															><label class="form-sub-label" for="day_7" id="sublabel_7_day" style="min-height: 13px">Day</label></span
 														><span class="form-sub-label-container" style="vertical-align: top"
 															><input
 																type="tel"
@@ -1626,7 +1577,7 @@
 																data-maxlength="4"
 																data-age=""
 																maxlength="4"
-																value=""
+																value="2024"
 																required=""
 																autocomplete="off"
 																aria-labelledby="label_7 sublabel_7_year"
@@ -1642,31 +1593,66 @@
 															data-maxlength="12"
 															maxlength="12"
 															data-age=""
-															value=""
+															value="11-01-2024"
 															required=""
-															data-format="mmddyyyy"
+															data-format="ddmmyyyy"
 															data-seperator="-"
-															placeholder="MM-DD-YYYY"
-															data-placeholder="MM-DD-YYYY"
+															placeholder="DD-MM-YYYY"
+															data-placeholder="DD-MM-YYYY"
 															autocomplete="off"
-															aria-labelledby="label_7 sublabel_7_litemode"
-														/><img
-															class="newDefaultTheme-dateIcon icon-liteMode"
+															aria-labelledby="label_7" /><img
+															class="showAutoCalendar newDefaultTheme-dateIcon icon-liteMode"
 															alt="Pick a Date"
 															id="input_7_pick"
 															src="https://cdn.jotfor.ms/images/calendar.png"
 															data-component="datetime"
 															aria-hidden="true"
 															data-allow-time="No"
-															data-version="v2"
-														/><label class="form-sub-label" for="lite_mode_7" id="sublabel_7_litemode" style="min-height: 13px">Date</label></span
+															data-version="v2" /><label class="form-sub-label is-empty" for="lite_mode_7" id="sublabel_7_litemode" style="min-height: 13px"></label
+													></span>
+												</div>
+											</div>
+										</li>
+										<li class="form-line jf-required" data-type="control_radio" id="id_9">
+											<label class="form-label form-label-top" id="label_9" aria-hidden="false"> Gender<span class="form-required">*</span> </label>
+											<div id="cid_9" class="form-input-wide jf-required" data-layout="full">
+												<div class="form-multiple-column" data-columncount="6" role="group" aria-labelledby="label_9" data-component="radio">
+													<span class="form-radio-item"
+														><span class="dragger-item"></span
+														><input type="radio" aria-describedby="label_9" class="form-radio validate[required]" id="input_9_0" name="q9_typeA9" value="Male" required="" /><label
+															id="label_input_9_0"
+															for="input_9_0"
+															>Male</label
+														></span
+													><span class="form-radio-item"
+														><span class="dragger-item"></span
+														><input
+															type="radio"
+															aria-describedby="label_9"
+															class="form-radio validate[required]"
+															id="input_9_1"
+															name="q9_typeA9"
+															value="Female"
+															required=""
+														/><label id="label_input_9_1" for="input_9_1">Female</label></span
+													><span class="form-radio-item"
+														><span class="dragger-item"></span
+														><input
+															type="radio"
+															aria-describedby="label_9"
+															class="form-radio validate[required]"
+															id="input_9_2"
+															name="q9_typeA9"
+															value="Do not wish to disclose"
+															required=""
+														/><label id="label_input_9_2" for="input_9_2">Do not wish to disclose</label></span
 													>
 												</div>
 											</div>
 										</li>
 										<li class="form-line" data-type="control_button" id="id_2">
 											<div id="cid_2" class="form-input-wide" data-layout="full">
-												<div data-align="auto" class="form-buttons-wrapper form-buttons-auto jsTest-button-wrapperField">
+												<div data-align="left" class="form-buttons-wrapper form-buttons-left jsTest-button-wrapperField">
 													<button id="input_2" type="submit" class="form-submit-button submit-button jf-form-buttons jsTest-submitField" data-component="button" data-content="">
 														Submit
 													</button>
