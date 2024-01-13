@@ -5192,9 +5192,28 @@ Animation Area Style*/
   font-size: 0.9rem;
 }
 
+.appointment-content iframe {
+  height: 900px !important;
+}
+
+.contact-form iframe {
+  height: 950px !important;
+}
+
+@media (min-width: 768px) {
+  .appointment-content iframe {
+    height: 600px !important;
+  }
+
+  .contact-form iframe {
+    height: 600px !important;
+  }
+}
+
+/* 
 iframe {
   height: 575px !important;
-}
+} */
 
 .overlay {
   position: absolute;
@@ -5217,7 +5236,9 @@ iframe {
   position: fixed;
   left: 20px;
   bottom: 10px;
+  z-index: 111111111;
 }
+
 
 .whatsapp-icon img {
   width: 50px;
@@ -5235,5 +5256,21 @@ iframe {
   .whatsapp-icon img {
     width: 50px;
     height: auto;
+  }
+}
+
+.banner-area.ptb-100 {
+  padding-top: 10px !important;
+}
+
+@media (min-width: 1200px) {
+  .banner-area.ptb-100 {
+    padding-top: 120px !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .banner-area .banner-content {
+    text-align: left !important;
   }
 }
