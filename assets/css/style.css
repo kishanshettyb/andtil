@@ -1518,7 +1518,7 @@ What We Provied Area Style
   right: 0;
   z-index: -1;
   margin: auto;
-  max-width: 800px;
+  /* max-width: 800px; */
 }
 
 .provider-img .provider-shape.style-two {
@@ -5115,6 +5115,10 @@ Animation Area Style*/
   height: auto;
 }
 
+.what-we-do-home {
+  height: auto;
+}
+
 .physio .single-what-we-do,
 .overweight .single-what-we-do {
   height: auto;
@@ -5127,6 +5131,10 @@ Animation Area Style*/
 
   .overweight .single-what-we-do {
     height: 350px;
+  }
+
+  .what-we-do-home {
+    height: 390px !important;
   }
 
 }
