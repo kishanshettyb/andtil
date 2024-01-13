@@ -5278,3 +5278,17 @@ iframe {
 .border-green {
   border: 2px solid #00ca99;
 }
+
+.andtil-ul {
+  margin: 0;
+  padding: 0;
+}
+
+.andtil-ul li {
+  list-style: none;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid #00ca99;
+  margin-bottom: 20px;
+}
