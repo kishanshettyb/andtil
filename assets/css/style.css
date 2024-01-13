@@ -1942,13 +1942,13 @@ Doctor Area Style
   transform: translateY(-5px);
 }
 
-.single-doctor:hover h3 {
+/* .single-doctor:hover h3 {
   opacity: 0;
 }
 
 .single-doctor:hover span {
   opacity: 0;
-}
+} */
 
 .single-doctor:hover ul {
   opacity: 1;
