@@ -5185,7 +5185,7 @@ Animation Area Style*/
 }
 
 .doctors-row span {
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .font-md {
@@ -5273,4 +5273,8 @@ iframe {
   .banner-area .banner-content {
     text-align: left !important;
   }
+}
+
+.border-green {
+  border: 2px solid #00ca99;
 }
