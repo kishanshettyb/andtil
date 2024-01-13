@@ -5292,3 +5292,8 @@ iframe {
   border: 1px solid #00ca99;
   margin-bottom: 20px;
 }
+
+.faq-content.style-two .accordion-body {
+  padding: 20px !important;
+
+}
