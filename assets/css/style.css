@@ -5187,3 +5187,20 @@ Animation Area Style*/
 iframe {
   height: 575px !important;
 }
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #000000b5;
+  width: 100%;
+}
+
+.page-title-area-new {
+  padding-top: 250px !important;
+}
+
+.navbar-area {
+  padding: 0;
+}
