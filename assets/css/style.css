@@ -5184,7 +5184,6 @@ Animation Area Style*/
   font-size: 0.9rem;
 }
 
-#input_2 {
-  height: 45px;
-  width: 100%;
+iframe {
+  height: 575px !important;
 }
