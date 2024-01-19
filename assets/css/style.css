@@ -5302,3 +5302,12 @@ iframe {
   padding: 20px !important;
 
 }
+
+.millet-ul {
+  padding: 0 0 0px 16px;
+}
+
+.millet-ul li {
+  padding-bottom: 1.5rem;
+
+}
