@@ -5120,7 +5120,8 @@ Animation Area Style*/
 }
 
 .physio .single-what-we-do,
-.overweight .single-what-we-do {
+.overweight .single-what-we-do,
+.fatty .single-what-we-do {
   height: auto;
 }
 
@@ -5131,6 +5132,10 @@ Animation Area Style*/
 
   .overweight .single-what-we-do {
     height: 350px;
+  }
+
+  .fatty .single-what-we-do {
+    height: 380px;
   }
 
   .what-we-do-home {
