@@ -5311,3 +5311,8 @@ iframe {
   padding-bottom: 1.5rem;
 
 }
+
+.food-benifit img,
+.food-benifit .single-benefits-content {
+  border-radius: 20px;
+}
