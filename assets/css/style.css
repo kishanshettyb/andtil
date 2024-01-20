@@ -2510,6 +2510,7 @@ Blog Area Style
   border-radius: 5px;
   -webkit-transition: all ease 0.5s;
   transition: all ease 0.5s;
+  border-radius: 20px;
 }
 
 .single-pricing-box h3 {
@@ -2524,9 +2525,10 @@ Blog Area Style
 
 .single-pricing-box h1 {
   color: #2279fc;
-  font-size: 40px;
+  font-size: 35px;
   font-family: "Nunito Sans", sans-serif;
   margin-bottom: 15px;
+  margin-bottom: 30px !important;
 }
 
 .single-pricing-box h1 sub {
@@ -5325,4 +5327,23 @@ iframe {
 .single-pricing-box span,
 .single-pricing-box h1 {
   text-align: center !important;
+}
+
+.single-pricing-box.active {
+  border-top: 5px solid rgb(34, 121, 252);
+  margin-top: -5px;
+}
+
+.single-pricing-box ul li {
+
+  font-size: 0.8rem;
+}
+
+.single-pricing-box ul li i {
+  color: green;
+}
+
+.single-pricing-box.active .default-btn {
+  background-color: #2279fc;
+  color: #fff;
 }
