@@ -13,8 +13,8 @@ This files table contents are outlined below>>>>>
 ** - Read More Area Style
 ** - Section Title Area Style
 ** - Header Area Style
-** - Nav Area Style
 ** - Banner Area Style
+** - Nav Area Style
 
 ** - Footer Area Style
 ** - Copy Right Area Style
@@ -5319,4 +5319,10 @@ iframe {
 
 iframe {
   border-radius: 20px;
+}
+
+.single-pricing-box h3,
+.single-pricing-box span,
+.single-pricing-box h1 {
+  text-align: center !important;
 }
