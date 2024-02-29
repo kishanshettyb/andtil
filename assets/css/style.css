@@ -5129,7 +5129,7 @@ Animation Area Style*/
 
 @media (min-width: 768px) {
   .physio .single-what-we-do {
-    height: 480px;
+    height: 500px;
   }
 
   .overweight .single-what-we-do {
@@ -5346,4 +5346,11 @@ iframe {
 .single-pricing-box.active .default-btn {
   background-color: #2279fc;
   color: #fff;
+}
+
+.strike-price {
+  font-size: 1.5rem;
+  text-decoration: line-through;
+  display: block;
+  margin-top: 15px;
 }
